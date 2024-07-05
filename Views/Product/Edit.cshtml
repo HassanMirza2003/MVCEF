@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model MVCEF.Models.Entities.Product
+<h1>Edit Product</h1>
+<form method="post">
+    <div class="mb-3">
+        <label for="Id" class="form-label">Please Enter Product ID</label>
+        <input type="text" class="form-control" id="Id" asp-for="Id" readonly="@Model.Id" />
+    </div>
+    <div class="mb-3">
+        <label for="Name" class="form-label">Please Enter Product Name</label>
+        <input type="text" class="form-control" id="Name" asp-for="Name" value="@Model.Name" />
+    </div>
+    <div class="mb-3">
+        <label for="Description" class="form-label">Please Enter Product Description</label>
+        <input type="text" class="form-control" id="Description" asp-for="Description" value="@Model.Description" />
+    </div>
+    <div class="mb-3">
+        <label for="Price" class="form-label">Please Enter Product Price</label>
+        <input type="text" class="form-control" id="Price" asp-for="Price" value="@Model.Price" />
+    </div>
+    <div class="mb-3">
+        <input type="submit" class="btn btn-primary" value="Submit" />
+    </div>
+</form>
+
